@@ -1,0 +1,37 @@
+.odontogram-app/src/styles/odontogram.css
+
+.odontogram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tooth {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tooth.to-be-performed {
+    background-color: #ffcc00; /* Yellow for to be performed */
+}
+
+.tooth.performing {
+    background-color: #00ccff; /* Blue for performing */
+}
+
+.tooth.performed {
+    background-color: #28a745; /* Green for performed */
+}
+
+.tooth:hover {
+    border-color: #000; /* Darker border on hover */
+}
